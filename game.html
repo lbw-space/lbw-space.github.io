@@ -426,7 +426,7 @@
     </div>
    </nav>
   </div>
-  <div class="site-search">
+<!--   <div class="site-search">
    <div class="reimu-popup popup">
     <div class="reimu-search">
      <div class="reimu-search-input-icon">
@@ -446,7 +446,7 @@
     </div>
     <img class="reimu-bg" src="/images/reimu.png"/>
    </div>
-  </div>
+  </div> -->
   <script>
        var selectSelected=document.getElementById("select-selected"),selectedLang=document.getElementById("selected-lang"),selectItems=document.getElementById("select-items"),selectOptions=selectItems.querySelectorAll("li");const textElements={},languageText={"zh-CN":{"qwe1":"魔法少女正在为您召唤网页...","qwe2":"小站简介","qwe3":"想法BLOG","qwe4":"记录生活","qwe5":"内置小游戏","qwe6":"BW Liu 的个人网站","qwe7":"微信","qwe8":"小站简介","qwe9":"想法BLOG","qwe10":"记录生活","qwe11":"内置小游戏","qwe12":"网站内置小游戏","qwe13":"使用方法：先鼠标点击页面，再按空格，即可开始","qwe14":"马里奥皮肤: ","qwe15":"小恐龙皮肤:","qwe16":"内置小游戏1","qwe17":"下一页","qwe18":"总访问量","qwe19":"总访客量","qwe20":"微信","qwe21":"小站简介","qwe22":"想法BLOG","qwe23":"记录生活","qwe30":"内置小游戏"},"en":{"qwe1":"The magical girl is summoning the webpage for you...","qwe2":"Detail","qwe3":"Ideas and Blogs","qwe4":"Life Record","qwe5":"Built-in Mini Games","qwe6":"BW Liu's Personal Website","qwe7":"WeChat","qwe8":"Detail","qwe9":"Ideas and Blogs","qwe10":"Life Record","qwe11":"Built-in Mini Games","qwe12":"Website Built-in Mini Games","qwe13":"Instructions: First click the mouse on the page, then press space to start","qwe14":"Mario Skin: ","qwe15":"Little Dinosaur Skin:","qwe16":"Built-in Mini Game 1","qwe17":"Next Page","qwe18":"Total Visits","qwe19":"Total Visitors","qwe20":"WeChat","qwe21":"Detail","qwe22":"Ideas and Blogs","qwe23":"Life Record","qwe30":"Built-in Mini Games"}};for(let i=1;i<=24;i++){textElements[`qwe${i}`]=document.getElementById(`qwe${i}`)}selectSelected.addEventListener("click",()=>{selectItems.classList.toggle("show")});selectOptions.forEach(t=>{t.addEventListener("click",()=>{const selectedLanguage=t.dataset.value;selectedLang.textContent=t.textContent;selectItems.classList.remove("show");selectOptions.forEach(e=>{e.classList.remove("selected")});t.classList.add("selected");for(let i=1;i<=24;i++){textElements[`qwe${i}`].textContent=languageText[selectedLanguage][`qwe${i}`]}})});document.addEventListener("click",e=>{if(!e.target.closest(".custom-dropdown")){selectItems.classList.remove("show")}})  
   </script>
